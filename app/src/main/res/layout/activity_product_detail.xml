@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProductDetailActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageCircle"
+        android:layout_width="200dp"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:src="@color/black"
+        android:layout_height="200dp"/>
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_below="@+id/imageCircle"
+        android:layout_marginTop="50dp"
+        android:text="So Klin Pewangi"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/pricetxt"
+        android:layout_width="wrap_content"
+        android:text="Price"
+        android:textSize="20sp"
+        android:layout_below="@id/product_name"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:text="Rp"
+        android:textSize="20sp"
+        android:layout_below="@id/product_name"
+        android:layout_toEndOf="@id/pricetxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:text="15.000"
+        android:textSize="20sp"
+        android:layout_below="@id/product_name"
+        android:layout_toEndOf="@id/currency"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dimtxt"
+        android:layout_width="wrap_content"
+        android:text="Dimension"
+        android:textSize="20sp"
+        android:layout_below="@id/pricetxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/dimension"
+        android:layout_width="wrap_content"
+        android:text="13 cm x 10 cm"
+        android:textSize="20sp"
+        android:layout_below="@id/currency"
+        android:layout_toEndOf="@id/dimtxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Price_Unit"
+        android:layout_width="wrap_content"
+        android:text="Dimension"
+        android:textSize="20sp"
+        android:layout_below="@id/dimtxt"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/unit"
+        android:layout_width="wrap_content"
+        android:text="PCS"
+        android:textSize="20sp"
+        android:layout_below="@id/dimension"
+        android:layout_toEndOf="@id/Price_Unit"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="140dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_buyy"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="BUY"
+        android:layout_marginBottom="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>
